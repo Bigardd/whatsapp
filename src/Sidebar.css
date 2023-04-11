@@ -1,0 +1,83 @@
+.Sidebar {
+  display: flex;
+  flex-direction: column;
+  flex: 0.35;
+}
+
+.sidebar__search {
+  display: flex;
+  align-items: center;
+  background-color: #f6f6f6;
+  height: 39px;
+  padding: 10px;
+}
+
+.sidebar__container {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+  height: 35px;
+  border-radius: 20px;
+}
+.sidebar__container > .MuiSvgIcon-root {
+  color: gray;
+  padding: 10px;
+}
+.sidebar__container input {
+  border: none;
+  margin-left: 10px;
+  outline: none;
+  width: 100%;
+}
+
+.sidebar__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-right: 1px solid lightgrey;
+  color: #fff;
+}
+.sidebar__headerRight {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 10vw;
+}
+.sidebar__headerRight > .MuiSvgIcon-root {
+  margin-right: 2vw;
+  font-size: 24px;
+  color: gray;
+}
+.sidebar__chats {
+  flex: 1;
+  background-color: white;
+  overflow: scroll;
+}
+.sidebar__chats::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .Sidebar {
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    height: 130vh;
+    flex: 1;
+    transition: all 0.5s;
+    top: 0px;
+    z-index: 999;
+  }
+  .Sidebar.show {
+    left: 0px;
+    top: 0px;
+  }
+  .Sidebar.hide {
+    left: -110vw;
+  }
+  .sidebar__header {
+    background: #fff;
+    padding: 10px;
+  }
+}
