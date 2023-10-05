@@ -13,7 +13,7 @@ import { useStateValue } from "./StateProvider";
 export default function Sidebar({ show, onClose }) {
   const [rooms, setRooms] = useState([]);
   const [{ user }, dispatch] = useStateValue();
-  console.log(dispatch);
+
   useEffect(() => {
     const unsubscribe = db
       .collection("rooms")
@@ -26,6 +26,7 @@ export default function Sidebar({ show, onClose }) {
           }))
         );
       });
+
     return () => {
       unsubscribe();
     };

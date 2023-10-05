@@ -3,15 +3,13 @@ import "firebase/compat/auth";
 import "firebase/compat/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBTgw8d3RcciGFnF7emQyrxtvOOB9XnPHM",
-  authDomain: "whatsapp-f56a3.firebaseapp.com",
-  projectId: "whatsapp-f56a3",
-  storageBucket: "whatsapp-f56a3.appspot.com",
-  messagingSenderId: "1024227193535",
-  appId: "1:1024227193535:web:4eb855276c08578f3acc0a",
-  measurementId: "G-14ZRBC1PEM",
+  apiKey: "AIzaSyD54oFmaBBmIxokH0Dcmr0ydDg25LfuMZU",
+  authDomain: "whatsapp-4747b.firebaseapp.com",
+  projectId: "whatsapp-4747b",
+  storageBucket: "whatsapp-4747b.appspot.com",
+  messagingSenderId: "235112072003",
+  appId: "1:235112072003:web:8e22d6f1d73033f1ace5f6",
 };
-
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 const db = firebaseApp.firestore();
 const auth = firebase.auth();
